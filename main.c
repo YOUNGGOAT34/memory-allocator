@@ -1,5 +1,10 @@
 #include "alloc_mem.h"
 
+extern HEAP *heap;
+
 int main(){
-    hello();
+   i8 *p;
+   p=heap;
+   *p='d';
+   
 }

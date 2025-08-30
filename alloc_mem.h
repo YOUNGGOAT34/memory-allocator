@@ -6,6 +6,11 @@
 #include<stdio.h>
 #include<stdbool.h>
 
+
+
+typedef void HEAP;
+
+
 typedef signed char i8;
 typedef signed short int i16;
 typedef signed int i32;
@@ -20,7 +25,7 @@ typedef unsigned _BitInt(128) u128;
 typedef struct header{
       u32 word_count:30;
       bool allocated:1;
-      bool reserved:1;
+      bool __attribute__((unused)) reserved:1;
 } __attribute__((packed)) header;
 
 void hello(void);

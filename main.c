@@ -7,4 +7,5 @@ int main(){
    p=heap;
    *p='d';
    
+   return 0;
 }
